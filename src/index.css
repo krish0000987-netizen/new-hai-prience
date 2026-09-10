@@ -1026,6 +1026,132 @@ input, select, textarea {
   }
 }
 
+/* ===================================================
+   HERO SLIDESHOW – FULLY RESPONSIVE
+   =================================================== */
+
+/* Section wrapper */
+.hero-slideshow-section {
+  position: relative;
+  width: 100%;
+  height: clamp(480px, 82vh, 720px);
+  overflow: hidden;
+  background-color: #0F172A;
+}
+
+@media (max-width: 768px) {
+  .hero-slideshow-section {
+    height: clamp(420px, 75vh, 600px);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-slideshow-section {
+    height: 100svh;
+    min-height: 480px;
+    max-height: 700px;
+  }
+}
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(15, 23, 42, 0.93) 0%,
+    rgba(15, 23, 42, 0.72) 55%,
+    rgba(15, 23, 42, 0.35) 100%
+  );
+}
+
+@media (max-width: 768px) {
+  .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(15, 23, 42, 0.55) 0%,
+      rgba(15, 23, 42, 0.92) 60%,
+      rgba(15, 23, 42, 0.98) 100%
+    );
+  }
+}
+
+/* Content wrapper inside the slide */
+.hero-content-wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .hero-content-wrap {
+    align-items: flex-end;
+    padding-bottom: 4.5rem;
+  }
+}
+
+/* Text block */
+.hero-text-block {
+  max-width: 680px;
+  color: #FFFFFF;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero-text-block {
+    max-width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text-block {
+    text-align: center;
+  }
+  .hero-text-block .btn-group-responsive {
+    justify-content: center;
+  }
+}
+
+/* Nav arrows */
+.hero-nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #FFFFFF;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.hero-nav-arrow:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.hero-nav-prev { left: 1.25rem; }
+.hero-nav-next { right: 1.25rem; }
+
+@media (max-width: 480px) {
+  .hero-nav-arrow {
+    display: none;
+  }
+}
+
+
 /* Keyframes */
 @keyframes fadeIn {
   from { opacity: 0; }

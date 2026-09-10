@@ -100,20 +100,12 @@ export default function HeroSlideshow({ onOpenQuoteModal }) {
 
   return (
     <section 
-      className="hero-slideshow-container"
+      className="hero-slideshow-section"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
-      style={{
-        position: 'relative',
-        width: '100%',
-        minHeight: '480px',
-        height: 'clamp(520px, 80vh, 720px)',
-        overflow: 'hidden',
-        backgroundColor: '#0F172A'
-      }}
     >
       {slides.map((slide, index) => {
         const isActive = index === currentSlide;
@@ -136,24 +128,18 @@ export default function HeroSlideshow({ onOpenQuoteModal }) {
                 inset: 0,
                 backgroundImage: `url(${slide.image})`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                backgroundPosition: 'center center',
                 transform: isActive ? 'scale(1.05)' : 'scale(1.0)',
                 transition: 'transform 4.5s ease-out'
               }}
             />
 
-            {/* Dark & Gradient Overlay for Contrast */}
-            <div
-              style={{
-                position: 'absolute',
-                inset: 0,
-                background: 'linear-gradient(90deg, rgba(15, 23, 42, 0.92) 0%, rgba(15, 23, 42, 0.72) 50%, rgba(15, 23, 42, 0.4) 100%)'
-              }}
-            />
+            {/* Dark & Gradient Overlay for Contrast - stronger on mobile */}
+            <div className="hero-overlay" />
 
             {/* Content Container */}
-            <div className="container" style={{ height: '100%', display: 'flex', alignItems: 'center', position: 'relative', zIndex: 10 }}>
-              <div style={{ maxWidth: '680px', color: '#FFFFFF', paddingTop: '1.5rem', paddingBottom: '2.5rem' }}>
+            <div className="container hero-content-wrap">
+              <div className="hero-text-block">
                 
                 {/* Tag Badge */}
                 <div style={{
@@ -223,23 +209,21 @@ export default function HeroSlideshow({ onOpenQuoteModal }) {
         );
       })}
 
-      {/* Navigation Arrows */}
+      {/* Navigation Arrows - hidden on small mobile */}
       <button
         onClick={handlePrev}
         aria-label="Previous Slide"
-        className="hero-nav-arrow"
-        style={{ left: '1.5rem' }}
+        className="hero-nav-arrow hero-nav-prev"
       >
-        <ChevronLeft size={24} />
+        <ChevronLeft size={22} />
       </button>
 
       <button
         onClick={handleNext}
         aria-label="Next Slide"
-        className="hero-nav-arrow"
-        style={{ right: '1.5rem' }}
+        className="hero-nav-arrow hero-nav-next"
       >
-        <ChevronRight size={24} />
+        <ChevronRight size={22} />
       </button>
 
       {/* Slide Indicators */}
