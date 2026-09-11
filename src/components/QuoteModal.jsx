@@ -77,7 +77,7 @@ export default function QuoteModal({ isOpen, onClose, selectedProductName = '' }
               Thank you, <strong>{formData.fullName}</strong>. Our sales & wholesale distribution team at <strong>Prince Industries (Derabish, Kendrapara, Odisha)</strong> will review your requirement for <strong>{formData.product}</strong> and contact you shortly.
             </p>
             <div style={{ backgroundColor: 'var(--bg-alt)', padding: '1rem', borderRadius: '10px', fontSize: '0.875rem', color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
-              Immediate enquiry? Call our sales desk directly at <strong>+91 98765 43210</strong>.
+              Immediate enquiry? Call our sales desk directly at <strong>+91 91780 52340</strong> or <strong>+91 85806 20653</strong>.
             </div>
             <button onClick={resetForm} className="btn btn-primary btn-md">
               Done & Close
@@ -159,7 +159,7 @@ export default function QuoteModal({ isOpen, onClose, selectedProductName = '' }
                       required
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="e.g. +91 98765 43210"
+                      placeholder="e.g. +91 91780 52340"
                       style={{
                         width: '100%',
                         padding: '0.7rem 0.85rem 0.7rem 2.4rem',

@@ -355,7 +355,7 @@ export default function GalleryContactPage({ onOpenQuoteModal }) {
                     />
                   </div>
 
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                  <div className="form-grid-2">
                     <div>
                       <label style={{ display: 'block', fontSize: '0.825rem', fontWeight: 700, marginBottom: '0.3rem' }}>Phone Number *</label>
                       <input 
@@ -363,7 +363,7 @@ export default function GalleryContactPage({ onOpenQuoteModal }) {
                         required 
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="+91 98765 43210"
+                        placeholder="+91 91780 52340"
                         style={{ width: '100%', padding: '0.7rem', border: '1px solid var(--border-light)', borderRadius: '8px', fontSize: '0.9rem', outline: 'none' }}
                       />
                     </div>
@@ -379,7 +379,7 @@ export default function GalleryContactPage({ onOpenQuoteModal }) {
                     </div>
                   </div>
 
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                  <div className="form-grid-2">
                     <div>
                       <label style={{ display: 'block', fontSize: '0.825rem', fontWeight: 700, marginBottom: '0.3rem' }}>Business Name</label>
                       <input 

@@ -63,28 +63,30 @@ export default function ProductsPage({ onOpenQuoteModal }) {
           <div style={{
             display: 'flex',
             flexWrap: 'wrap',
-            gap: '1.25rem',
+            gap: '1rem',
             justifyContent: 'space-between',
             alignItems: 'center',
-            marginBottom: '3rem',
-            padding: '1.25rem',
+            marginBottom: '2.5rem',
+            padding: '1rem',
             backgroundColor: 'var(--bg-alt)',
             borderRadius: 'var(--radius-md)',
             border: '1px solid var(--border-light)'
           }}>
             {/* Category Tabs */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <div className="scroll-chips-row" style={{ flexGrow: 1, maxWidth: '100%' }}>
               {CATEGORIES.map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
                   style={{
-                    padding: '0.5rem 1rem',
+                    padding: '0.5rem 0.9rem',
                     borderRadius: '8px',
-                    fontSize: '0.875rem',
+                    fontSize: '0.85rem',
                     fontWeight: 700,
                     border: 'none',
                     cursor: 'pointer',
+                    whiteSpace: 'nowrap',
+                    flexShrink: 0,
                     transition: 'all 0.2s',
                     backgroundColor: activeCategory === cat ? 'var(--accent-green)' : '#FFFFFF',
                     color: activeCategory === cat ? '#FFFFFF' : 'var(--text-primary)',
@@ -97,7 +99,7 @@ export default function ProductsPage({ onOpenQuoteModal }) {
             </div>
 
             {/* Search Input */}
-            <div style={{ position: 'relative', width: '100%', maxWidth: '300px' }}>
+            <div className="filter-search-box" style={{ position: 'relative', width: '100%', maxWidth: '300px' }}>
               <Search size={16} style={{ position: 'absolute', left: '0.85rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
               <input
                 type="text"

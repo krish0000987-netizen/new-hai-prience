@@ -161,7 +161,7 @@ export default function WholesalePage({ onOpenQuoteModal }) {
               </div>
             ) : (
               <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
+                <div className="form-grid-2">
                   <div>
                     <label style={{ display: 'block', fontSize: '0.875rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '0.35rem' }}>
                       Full Name *
@@ -205,7 +205,7 @@ export default function WholesalePage({ onOpenQuoteModal }) {
                   </div>
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
+                <div className="form-grid-2">
                   <div>
                     <label style={{ display: 'block', fontSize: '0.875rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '0.35rem' }}>
                       Phone Number *
@@ -215,7 +215,7 @@ export default function WholesalePage({ onOpenQuoteModal }) {
                       required
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="e.g. +91 98765 43210"
+                      placeholder="e.g. +91 91780 52340"
                       style={{
                         width: '100%',
                         padding: '0.75rem 1rem',
@@ -248,7 +248,7 @@ export default function WholesalePage({ onOpenQuoteModal }) {
                   </div>
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
+                <div className="form-grid-2">
                   <div>
                     <label style={{ display: 'block', fontSize: '0.875rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '0.35rem' }}>
                       Product Required
@@ -315,12 +315,12 @@ export default function WholesalePage({ onOpenQuoteModal }) {
                   />
                 </div>
 
-                <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginTop: '0.5rem' }}>
+                <div className="btn-group-responsive" style={{ marginTop: '0.5rem' }}>
                   <button type="submit" className="btn btn-primary btn-lg" style={{ flexGrow: 1 }}>
                     <Send size={18} />
                     <span>Request Wholesale Quote</span>
                   </button>
-                  <a href="tel:+919876543210" className="btn btn-secondary btn-lg">
+                  <a href="tel:+919178052340" className="btn btn-secondary btn-lg">
                     <Phone size={18} />
                     <span>Call Sales Desk</span>
                   </a>

@@ -79,7 +79,7 @@ export default function AboutPage({ onOpenQuoteModal }) {
                 Whether supplying individual households with skin-soothing scented handwashes, empowering local retailers with high-demand detergent stock, or fulfilling bulk disinfectant phenyl orders for institutions, Prince Industries stands for consistency, trust, and uncompromised quality.
               </p>
 
-              <div style={{ display: 'flex', gap: '1rem' }}>
+              <div className="btn-group-responsive">
                 <button onClick={() => onOpenQuoteModal()} className="btn btn-primary btn-md">
                   <span>Get a Wholesale Quote</span>
                   <ArrowRight size={16} />

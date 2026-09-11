@@ -439,7 +439,7 @@ export default function HomePage({ onOpenQuoteModal }) {
               <Send size={18} />
               <span>Request Wholesale Quote</span>
             </button>
-            <a href="tel:+919876543210" className="btn btn-secondary btn-lg" style={{ backgroundColor: '#FFFFFF' }}>
+            <a href="tel:+919178052340" className="btn btn-secondary btn-lg" style={{ backgroundColor: '#FFFFFF' }}>
               <Phone size={18} />
               <span>Call Direct: Sales Desk</span>
             </a>
@@ -464,7 +464,7 @@ export default function HomePage({ onOpenQuoteModal }) {
               <span>Contact Prince Industries</span>
               <ArrowRight size={18} />
             </NavLink>
-            <a href="tel:+919876543210" className="btn btn-secondary btn-lg">
+            <a href="tel:+919178052340" className="btn btn-secondary btn-lg">
               <Phone size={18} />
               <span>Call Now</span>
             </a>

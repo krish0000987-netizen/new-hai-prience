@@ -72,9 +72,9 @@ export default function Header({ onOpenQuoteModal }) {
             </div>
           </div>
           <div className="top-bar-info">
-            <a href="tel:+919876543210" className="top-bar-item hover:text-white transition-colors" style={{ color: 'inherit' }}>
-              <Phone size={14} />
-              <span>Call For Bulk Enquiries</span>
+            <a href="tel:+919178052340" className="top-bar-item hover:text-white transition-colors" style={{ color: 'inherit' }}>
+              <Phone size={14} style={{ color: '#34D399' }} />
+              <span>+91 91780 52340</span>
             </a>
           </div>
         </div>
@@ -178,7 +178,7 @@ export default function Header({ onOpenQuoteModal }) {
 
             {/* Desktop / Responsive Action Buttons */}
             <div className="header-actions">
-              <a href="tel:+919876543210" className="btn btn-secondary btn-sm header-call-btn">
+              <a href="tel:+919178052340" className="btn btn-secondary btn-sm header-call-btn" aria-label="Call sales desk">
                 <Phone size={15} />
                 <span>Call Now</span>
               </a>
@@ -186,6 +186,7 @@ export default function Header({ onOpenQuoteModal }) {
               <button 
                 onClick={() => onOpenQuoteModal()} 
                 className="btn btn-primary btn-sm header-quote-btn"
+                aria-label="Request quote"
               >
                 <Send size={15} />
                 <span>Get a Quote</span>
@@ -196,6 +197,7 @@ export default function Header({ onOpenQuoteModal }) {
                 className="mobile-menu-btn" 
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label="Toggle navigation menu"
+                style={{ width: '44px', height: '44px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
               >
                 {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
               </button>
@@ -260,18 +262,18 @@ export default function Header({ onOpenQuoteModal }) {
                 <button 
                   onClick={() => { setMobileMenuOpen(false); onOpenQuoteModal(); }} 
                   className="btn btn-primary btn-lg" 
-                  style={{ width: '100%' }}
+                  style={{ width: '100%', minHeight: '48px' }}
                 >
                   <Send size={18} />
                   <span>Get a Wholesale Quote</span>
                 </button>
                 <a 
-                  href="tel:+919876543210" 
+                  href="tel:+919178052340" 
                   className="btn btn-secondary btn-lg" 
-                  style={{ width: '100%', justifyContent: 'center' }}
+                  style={{ width: '100%', justifyContent: 'center', minHeight: '48px' }}
                 >
                   <Phone size={18} />
-                  <span>Call Direct (+91 98765 43210)</span>
+                  <span>Call Direct (+91 91780 52340)</span>
                 </a>
               </div>
             </div>

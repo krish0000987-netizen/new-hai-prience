@@ -331,12 +331,12 @@ export default function ProductCard({ product, onOpenQuoteModal }) {
             <div style={{
               position: 'relative',
               width: '100%',
-              height: '460px',
+              height: 'clamp(240px, 48vh, 460px)',
               backgroundColor: isWhiteBottle ? '#FFFFFF' : '#0B1329',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              padding: '1rem'
+              padding: '0.75rem'
             }}>
               <img
                 src={currentImg}
@@ -353,7 +353,7 @@ export default function ProductCard({ product, onOpenQuoteModal }) {
                   <button
                     onClick={prev}
                     style={{
-                      position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)',
+                      position: 'absolute', left: '0.5rem', top: '50%', transform: 'translateY(-50%)',
                       backgroundColor: 'rgba(15,23,42,0.75)', border: 'none', borderRadius: '50%',
                       width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center',
                       color: '#fff', cursor: 'pointer', zIndex: 10
@@ -364,7 +364,7 @@ export default function ProductCard({ product, onOpenQuoteModal }) {
                   <button
                     onClick={next}
                     style={{
-                      position: 'absolute', right: '1rem', top: '50%', transform: 'translateY(-50%)',
+                      position: 'absolute', right: '0.5rem', top: '50%', transform: 'translateY(-50%)',
                       backgroundColor: 'rgba(15,23,42,0.75)', border: 'none', borderRadius: '50%',
                       width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center',
                       color: '#fff', cursor: 'pointer', zIndex: 10
@@ -378,14 +378,16 @@ export default function ProductCard({ product, onOpenQuoteModal }) {
 
             {/* Modal Footer */}
             <div style={{
-              padding: '1rem 1.5rem',
+              padding: '0.85rem 1.25rem',
               backgroundColor: '#F8FAFC',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between',
+              gap: '0.75rem',
+              flexWrap: 'wrap',
               borderTop: '1px solid var(--border-light)'
             }}>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+              <div style={{ fontSize: '0.825rem', color: 'var(--text-secondary)' }}>
                 Direct Manufacturer: <strong>Prince Industries, Kendrapara, Odisha</strong>
               </div>
               <button
