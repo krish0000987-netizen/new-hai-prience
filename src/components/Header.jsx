@@ -196,7 +196,7 @@ export default function Header({ onOpenQuoteModal }) {
               <button 
                 className="mobile-menu-btn" 
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                aria-label="Toggle navigation menu"
+                aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
                 style={{ width: '44px', height: '44px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
               >
                 {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
@@ -204,17 +204,19 @@ export default function Header({ onOpenQuoteModal }) {
             </div>
           </nav>
         </div>
+      </header>
 
-        {/* Mobile Full Screen Menu Drawer */}
-        {mobileMenuOpen && (
-          <div className="mobile-drawer-overlay">
+      {/* Mobile Full Screen Menu Drawer (Outside sticky header for proper full-viewport fixed positioning) */}
+      {mobileMenuOpen && (
+        <div className="mobile-drawer-overlay" onClick={() => setMobileMenuOpen(false)}>
+          <div className="mobile-drawer-container" onClick={(e) => e.stopPropagation()}>
             <div className="mobile-drawer-header">
               <div className="brand-logo">
                 <img 
                   src="/assets/images/logo.png" 
                   alt="Prince Industries Logo" 
                   className="brand-logo-img"
-                  style={{ height: '42px' }}
+                  style={{ height: '42px', width: 'auto' }}
                 />
                 <div className="brand-text">
                   <span className="brand-name" style={{ fontSize: '1.2rem' }}>PRINCE INDUSTRIES</span>
@@ -223,16 +225,18 @@ export default function Header({ onOpenQuoteModal }) {
               </div>
               <button 
                 onClick={() => setMobileMenuOpen(false)}
+                aria-label="Close navigation drawer"
                 style={{
                   background: 'var(--bg-alt)',
                   border: 'none',
-                  width: '36px',
-                  height: '36px',
+                  width: '40px',
+                  height: '40px',
                   borderRadius: '50%',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: 'var(--text-primary)'
+                  color: 'var(--text-primary)',
+                  cursor: 'pointer'
                 }}
               >
                 <X size={22} />
@@ -262,7 +266,7 @@ export default function Header({ onOpenQuoteModal }) {
                 <button 
                   onClick={() => { setMobileMenuOpen(false); onOpenQuoteModal(); }} 
                   className="btn btn-primary btn-lg" 
-                  style={{ width: '100%', minHeight: '48px' }}
+                  style={{ width: '100%', minHeight: '48px', justifyContent: 'center' }}
                 >
                   <Send size={18} />
                   <span>Get a Wholesale Quote</span>
@@ -278,8 +282,8 @@ export default function Header({ onOpenQuoteModal }) {
               </div>
             </div>
           </div>
-        )}
-      </header>
+        </div>
+      )}
     </>
   );
 }
