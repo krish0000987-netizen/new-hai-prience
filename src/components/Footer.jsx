@@ -10,12 +10,15 @@ export default function Footer({ onOpenQuoteModal }) {
           {/* Brand Info */}
           <div className="footer-brand">
             <div className="brand-logo">
-              <div className="brand-icon">
-                <span>P</span>
-              </div>
+              <img 
+                src="/assets/images/logo.png" 
+                alt="Prince Industries Logo" 
+                className="brand-logo-img"
+                style={{ height: '56px' }}
+              />
               <div className="brand-text">
-                <span className="brand-name">PRINCE INDUSTRIES</span>
-                <span className="brand-tagline">Quality Cleaning. Everyday Hygiene.</span>
+                <span className="brand-name" style={{ color: '#FFFFFF' }}>PRINCE INDUSTRIES</span>
+                <span className="brand-tagline" style={{ color: '#34D399' }}>Quality • Trust • Cleanliness</span>
               </div>
             </div>
             <p style={{ fontSize: '0.925rem', lineHeight: '1.7', color: '#94A3B8' }}>

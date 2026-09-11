@@ -113,6 +113,13 @@ export const GALLERY_ITEMS = [
   },
   {
     id: 17,
+    title: "Official Brand Emblem & Crest",
+    category: "Brand",
+    image: "/assets/images/logo.png",
+    caption: "Prince Industries official trademark emblem — Quality • Trust • Cleanliness."
+  },
+  {
+    id: 18,
     title: "Prince Industries Brand Banner",
     category: "Brand",
     image: "/assets/images/brand_banner_white_phenyl.jpg",

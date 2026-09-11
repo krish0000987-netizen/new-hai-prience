@@ -86,12 +86,14 @@ export default function Header({ onOpenQuoteModal }) {
           <nav className="navbar">
             {/* Logo */}
             <NavLink to="/" className="brand-logo">
-              <div className="brand-icon">
-                <span>P</span>
-              </div>
+              <img 
+                src="/assets/images/logo.png" 
+                alt="Prince Industries Logo" 
+                className="brand-logo-img"
+              />
               <div className="brand-text">
                 <span className="brand-name">PRINCE INDUSTRIES</span>
-                <span className="brand-tagline">Quality Cleaning. Everyday Hygiene.</span>
+                <span className="brand-tagline">Quality • Trust • Cleanliness</span>
               </div>
             </NavLink>
 
@@ -206,10 +208,16 @@ export default function Header({ onOpenQuoteModal }) {
           <div className="mobile-drawer-overlay">
             <div className="mobile-drawer-header">
               <div className="brand-logo">
-                <div className="brand-icon" style={{ width: '36px', height: '36px', fontSize: '1.1rem' }}>
-                  <span>P</span>
+                <img 
+                  src="/assets/images/logo.png" 
+                  alt="Prince Industries Logo" 
+                  className="brand-logo-img"
+                  style={{ height: '42px' }}
+                />
+                <div className="brand-text">
+                  <span className="brand-name" style={{ fontSize: '1.2rem' }}>PRINCE INDUSTRIES</span>
+                  <span className="brand-tagline" style={{ fontSize: '0.62rem' }}>Quality • Trust • Cleanliness</span>
                 </div>
-                <span className="brand-name" style={{ fontSize: '1.2rem' }}>PRINCE INDUSTRIES</span>
               </div>
               <button 
                 onClick={() => setMobileMenuOpen(false)}

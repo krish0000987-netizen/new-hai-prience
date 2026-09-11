@@ -45,7 +45,7 @@ export default function AboutPage({ onOpenQuoteModal }) {
               marginBottom: '1rem'
             }}>
               <Sparkles size={14} />
-              TRUSTED MANUFACTURER IN GANJAM, ODISHA
+              TRUSTED MANUFACTURER IN KENDRAPARA, ODISHA
             </span>
             <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: '3rem', fontWeight: 800, lineHeight: 1.15, marginBottom: '1rem' }}>
               About Prince Industries
@@ -90,18 +90,44 @@ export default function AboutPage({ onOpenQuoteModal }) {
               </div>
             </div>
 
-            <div>
+            <div style={{ position: 'relative' }}>
               <div style={{
                 borderRadius: 'var(--radius-lg)',
                 overflow: 'hidden',
                 boxShadow: 'var(--shadow-xl)',
-                border: '1px solid var(--border-light)'
+                border: '1px solid var(--border-light)',
+                position: 'relative'
               }}>
                 <img 
                   src="/assets/images/hero_manufacturing_plant_1788951656578.jpg" 
                   alt="Prince Industries Story in Derabish, Kendrapara Odisha"
                   style={{ width: '100%', height: '440px', objectFit: 'cover' }}
                 />
+              </div>
+
+              {/* Official Seal Emblem Floating Badge */}
+              <div style={{
+                position: 'absolute',
+                bottom: '-25px',
+                left: '25px',
+                backgroundColor: '#FFFFFF',
+                borderRadius: '16px',
+                padding: '0.85rem 1.25rem',
+                boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.15)',
+                border: '1px solid var(--border-light)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '1rem'
+              }}>
+                <img 
+                  src="/assets/images/logo.png" 
+                  alt="Prince Industries Crest" 
+                  style={{ height: '65px', width: 'auto', objectFit: 'contain' }}
+                />
+                <div>
+                  <div style={{ fontWeight: 800, fontSize: '1rem', color: 'var(--text-primary)' }}>Prince Industries Seal</div>
+                  <div style={{ fontSize: '0.78rem', color: 'var(--accent-green)', fontWeight: 700 }}>Quality • Trust • Cleanliness</div>
+                </div>
               </div>
             </div>
           </div>
