@@ -3,7 +3,7 @@ import { Factory, Store, ShoppingBag, Truck, ShieldCheck, MapPin } from 'lucide-
 
 export default function TrustStrip() {
   const trustItems = [
-    { icon: Factory, label: "Direct Manufacturer", desc: "Formulated & Produced in Aska" },
+    { icon: Factory, label: "Direct Manufacturer", desc: "Formulated & Produced in Derabish, Kendrapara" },
     { icon: Store, label: "Wholesale Supplier", desc: "Competitive B2B Factory Pricing" },
     { icon: ShoppingBag, label: "Retail Availability", desc: "Premium Consumer Packaging" },
     { icon: Truck, label: "Bulk Order Logistics", desc: "Reliable Supply Across Odisha" },

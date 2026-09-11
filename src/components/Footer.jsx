@@ -19,7 +19,7 @@ export default function Footer({ onOpenQuoteModal }) {
               </div>
             </div>
             <p style={{ fontSize: '0.925rem', lineHeight: '1.7', color: '#94A3B8' }}>
-              Prince Industries is a trusted manufacturer, wholesaler, and retailer of quality cleaning and hygiene products in Aska, Ganjam, Odisha. Manufacturing high-performance cleaning solutions for homes, businesses, and institutions.
+              Prince Industries is a trusted manufacturer, wholesaler, and retailer of quality cleaning and hygiene products in Derabish, Kendrapara, Odisha. Manufacturing high-performance cleaning solutions for homes, businesses, and institutions.
             </p>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', color: '#10B981', fontWeight: 600, fontSize: '0.875rem' }}>
               <ShieldCheck size={18} />
@@ -54,9 +54,11 @@ export default function Footer({ onOpenQuoteModal }) {
               <li><NavLink to="/cleaning-products" className="footer-link">White Phenyl</NavLink></li>
               <li><NavLink to="/cleaning-products" className="footer-link">Black Phenyl</NavLink></li>
               <li><NavLink to="/cleaning-products" className="footer-link">Floor Cleaner</NavLink></li>
+              <li><NavLink to="/cleaning-products" className="footer-link">Toilet Cleaner</NavLink></li>
               <li><NavLink to="/cleaning-products" className="footer-link">Floor Acid</NavLink></li>
               <li><NavLink to="/cleaning-products" className="footer-link">Dish Wash</NavLink></li>
               <li><NavLink to="/products" className="footer-link">Car Freshener</NavLink></li>
+              <li><NavLink to="/products" className="footer-link">Herbal Soap</NavLink></li>
             </ul>
           </div>
 
@@ -68,13 +70,16 @@ export default function Footer({ onOpenQuoteModal }) {
                 <MapPin size={20} style={{ color: '#10B981', flexShrink: 0, marginTop: '2px' }} />
                 <span>
                   <strong>Prince Industries</strong><br />
-                  Aska, Ganjam District,<br />
-                  Odisha, India - 761111
+                  At. Chasakhanda Post, Derabish,<br />
+                  Dist. Kendrapara, Odisha - 754289
                 </span>
               </div>
               <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
                 <Phone size={18} style={{ color: '#38BDF8', flexShrink: 0 }} />
-                <span>Wholesale Direct Enquiry Available</span>
+                <span>
+                  <a href="tel:+919178052340" style={{ color: 'inherit', textDecoration: 'none' }}>+91 91780 52340</a><br />
+                  <a href="tel:+918580620653" style={{ color: 'inherit', textDecoration: 'none' }}>+91 85806 20653</a>
+                </span>
               </div>
               <div style={{ paddingTop: '0.5rem' }}>
                 <button 
@@ -92,7 +97,7 @@ export default function Footer({ onOpenQuoteModal }) {
 
         {/* Footer Bottom */}
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} Prince Industries. All Rights Reserved. Aska, Ganjam, Odisha.</p>
+          <p>© {new Date().getFullYear()} Prince Industries. All Rights Reserved. Derabish, Kendrapara, Odisha.</p>
           <div style={{ display: 'flex', gap: '1.5rem', color: '#64748B' }}>
             <span>Manufacturer</span>
             <span>•</span>

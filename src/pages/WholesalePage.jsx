@@ -9,7 +9,7 @@ export default function WholesalePage({ onOpenQuoteModal }) {
     businessName: '',
     phone: '',
     email: '',
-    city: 'Aska / Berhampur',
+    city: 'Derabish, Kendrapara',
     product: 'Full Wholesale Range',
     quantity: 'Bulk Cartons / Drums',
     message: ''
@@ -36,7 +36,7 @@ export default function WholesalePage({ onOpenQuoteModal }) {
     <div>
       <SEOHead 
         title="Wholesale & Bulk Cleaning Product Supplier - Odisha" 
-        description="Direct manufacturer wholesale supply of handwash, detergent powder, phenyl, floor cleaner in Aska, Ganjam, Odisha. Request B2B pricing quote."
+        description="Direct manufacturer wholesale supply of handwash, detergent powder, phenyl, floor cleaner in Derabish, Kendrapara, Odisha. Request B2B pricing quote."
       />
 
       {/* Hero */}
@@ -66,7 +66,7 @@ export default function WholesalePage({ onOpenQuoteModal }) {
               Reliable Cleaning Product Supply for Businesses
             </h1>
             <p style={{ fontSize: '1.15rem', color: '#94A3B8', lineHeight: 1.7 }}>
-              Partner directly with Prince Industries in Aska, Ganjam, Odisha for direct manufacturer rates, bulk volume supply, and prompt delivery schedules.
+              Partner directly with Prince Industries in Derabish, Kendrapara, Odisha for direct manufacturer rates, bulk volume supply, and prompt delivery schedules.
             </p>
           </div>
         </div>
@@ -130,7 +130,7 @@ export default function WholesalePage({ onOpenQuoteModal }) {
                 Request a Wholesale Price List & Quote
               </h2>
               <p className="section-subtitle">
-                Fill out your requirement below to receive direct factory pricing and catalog details from our Aska sales team.
+                Fill out your requirement below to receive direct factory pricing and catalog details from our Kendrapara sales team.
               </p>
             </div>
 
@@ -192,7 +192,7 @@ export default function WholesalePage({ onOpenQuoteModal }) {
                       required
                       value={formData.businessName}
                       onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
-                      placeholder="e.g. Ganjam Traders"
+                      placeholder="e.g. Kendrapara Traders"
                       style={{
                         width: '100%',
                         padding: '0.75rem 1rem',
@@ -281,7 +281,7 @@ export default function WholesalePage({ onOpenQuoteModal }) {
                       type="text"
                       value={formData.city}
                       onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                      placeholder="Aska, Berhampur, Phulbani..."
+                      placeholder="Kendrapara, Cuttack, Jagatsinghpur..."
                       style={{
                         width: '100%',
                         padding: '0.75rem 1rem',

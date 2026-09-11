@@ -16,7 +16,7 @@ export default function DetergentPage({ onOpenQuoteModal }) {
     <div>
       <SEOHead 
         title="Detergent Powder & Liquid Detergent Manufacturer" 
-        description="Prince Industries manufactures high-performance Detergent Powder and Liquid Detergent in Aska, Ganjam, Odisha. High stain removal, long-lasting aroma."
+        description="Prince Industries manufactures high-performance Detergent Powder and Liquid Detergent in Derabish, Kendrapara, Odisha. High stain removal, long-lasting aroma."
       />
 
       {/* Hero */}

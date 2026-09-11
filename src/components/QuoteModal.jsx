@@ -8,7 +8,7 @@ export default function QuoteModal({ isOpen, onClose, selectedProductName = '' }
     businessName: '',
     phone: '',
     email: '',
-    city: 'Aska / Ganjam',
+    city: 'Derabish, Kendrapara',
     product: selectedProductName || 'Handwash Range (Liquid Handwash)',
     quantity: 'Wholesale / Bulk Order',
     message: ''
@@ -74,7 +74,7 @@ export default function QuoteModal({ isOpen, onClose, selectedProductName = '' }
               Enquiry Received!
             </h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6', marginBottom: '1.5rem' }}>
-              Thank you, <strong>{formData.fullName}</strong>. Our sales & wholesale distribution team at <strong>Prince Industries (Aska, Odisha)</strong> will review your requirement for <strong>{formData.product}</strong> and contact you shortly.
+              Thank you, <strong>{formData.fullName}</strong>. Our sales & wholesale distribution team at <strong>Prince Industries (Derabish, Kendrapara, Odisha)</strong> will review your requirement for <strong>{formData.product}</strong> and contact you shortly.
             </p>
             <div style={{ backgroundColor: 'var(--bg-alt)', padding: '1rem', borderRadius: '10px', fontSize: '0.875rem', color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
               Immediate enquiry? Call our sales desk directly at <strong>+91 98765 43210</strong>.
@@ -234,7 +234,7 @@ export default function QuoteModal({ isOpen, onClose, selectedProductName = '' }
                       type="text" 
                       value={formData.city}
                       onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                      placeholder="Aska, Berhampur, Bhubaneswar..."
+                      placeholder="Kendrapara, Cuttack, Bhubaneswar..."
                       style={{
                         width: '100%',
                         padding: '0.7rem 0.85rem 0.7rem 2.4rem',

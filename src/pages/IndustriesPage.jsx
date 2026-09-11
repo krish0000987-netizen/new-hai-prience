@@ -65,7 +65,7 @@ export default function IndustriesPage({ onOpenQuoteModal }) {
       title: "Distributors & Wholesalers",
       subtitle: "Regional High-Volume Supply Packages",
       image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
-      desc: "We support wholesale distributors with priority batch dispatch, flexible order quantities, and reliable recurring supply across Ganjam and Odisha.",
+      desc: "We support wholesale distributors with priority batch dispatch, flexible order quantities, and reliable recurring supply across Kendrapara and Odisha.",
       recommended: ["Full Product Suite", "Wholesale Cartons & Pallets"]
     }
   ];

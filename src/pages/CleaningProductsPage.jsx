@@ -8,59 +8,75 @@ export default function CleaningProductsPage({ onOpenQuoteModal }) {
       id: "white-phenyl",
       name: "White Phenyl (Pine Oil Disinfectant)",
       category: "Floor Care & Hygiene",
-      image: "/assets/images/hero_slide_2.jpg",
-      tagline: "High-Emulsion Pine Disinfectant Floor Cleaner",
-      description: "Prince Industries manufactures dense, high-grade white phenyl formulated with rich pine oils. It effectively kills household germs, eliminates foul odors, repels flies and insects, and leaves floors sparkling white with a natural pine fragrance.",
+      image: "/assets/images/product_white_phenyl_neem.jpg",
+      isBottle: true,
+      tagline: "Natural Neem Infused Floor Disinfectant — 1 Litre",
+      description: "Prince Industries manufactures dense, high-grade white phenyl formulated with rich pine oils and natural neem extracts. It effectively kills 99.9% household germs & bacteria, eliminates foul odors, repels flies and insects, and leaves floors sparkling clean with a lasting fresh fragrance.",
       usages: ["Marble & Granite Floors", "Ceramic Tiles", "Hospital & Clinic Corridors", "School & College Classrooms"],
       packaging: "500ml Bottle | 1 Litre Bottle | 5 Litre Can | 50 Litre Bulk Drum"
     },
     {
       id: "black-phenyl",
-      name: "Black Phenyl (Grade-1 Disinfectant)",
+      name: "Prince Kobra Black Phenyl (Disinfectant)",
       category: "Heavy-Duty Sanitation",
-      image: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=800&q=80",
-      tagline: "Heavy-Duty Disinfectant for Commercial & Exterior Spaces",
-      description: "Our Grade-1 black phenyl is specially engineered for intense sanitization requirements. It features powerful coal-tar oil active ingredients designed to disinfect drains, municipal public toilets, slaughterhouses, factory yards, and heavy-footfall sanitation lines.",
+      image: "/assets/images/product_black_phenyl_kobra.jpg",
+      isBottle: false,
+      tagline: "Powerful Disinfectant Phenyl — 1L Bottle & 5L Canister",
+      description: "Our heavy-duty Prince Kobra Black Phenyl is specially engineered for intense sanitization requirements. It features powerful germicidal active ingredients that disinfect drains, exterior floors, public restrooms, industrial yards, and high-footfall commercial sanitation zones.",
       usages: ["Drain Lines & Sewage Outlets", "Public Restrooms & Toilets", "Industrial Waste Yards", "Municipal Sanitation Zones"],
       packaging: "1 Litre Bottle | 5 Litre Canister | 200 Litre Industrial Barrel"
     },
     {
+      id: "toilet-cleaner",
+      name: "Prince Toilet Cleaner (Power Plus 10X & Pro Max)",
+      category: "Sanitary & Bathroom Care",
+      image: "/assets/images/product_toilet_cleaner.jpg",
+      isBottle: true,
+      tagline: "10X Germ Kill Thick Formula — 500ml Angular Nozzle Bottle",
+      description: "Prince Industries manufactures a thick, concentrated gel toilet cleaner designed to cling to vertical bowl surfaces for deep sanitization. Eliminates tough yellow deposits, hard water lime scale, removes 99.9% germs, and imparts a refreshing pine and ocean blue aroma.",
+      usages: ["Western & Indian Toilet Bowls", "Urinals & Restroom Basins", "Hotel & Lodge Restrooms", "Hospital Sanitation"],
+      packaging: "500ml Squeeze Dispenser Bottle | 1 Litre Refill | 5 Litre Commercial Can"
+    },
+    {
       id: "floor-cleaner",
-      name: "Phenyl Floor Cleaner / Surface Cleaner",
+      name: "Royal Neem Phenyl Floor Cleaner / Surface Cleaner",
       category: "Surface & Floor Care",
-      image: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=800&q=80",
-      tagline: "Multi-Surface Scented Gloss Cleaner",
-      description: "A fast-drying, streak-free surface cleaner that effortlessly lifts dust, footprints, sticky spills, and grease from modern flooring surfaces. Infused with pleasant citrus and floral perfume notes to keep living and work spaces fresh all day.",
+      image: "/assets/images/product_black_phenyl_neem_bottle.jpg",
+      isBottle: true,
+      tagline: "Multi-Surface Scented Gloss Cleaner — 1 Litre",
+      description: "A fast-drying, streak-free surface cleaner that effortlessly lifts dust, footprints, sticky spills, and grease from modern flooring surfaces. Infused with natural neem fragrance to keep living and work spaces fresh and germ-free all day.",
       usages: ["Living Rooms & Bedrooms", "Corporate Offices & Reception Desks", "Hotel Lobbies & Hallways", "Shopping Malls"],
       packaging: "500ml Squeeze Bottle | 1 Litre Container | 5 Litre Bulk Can"
     },
     {
       id: "floor-acid",
-      name: "Floor Acid (Surface Stain Remover)",
+      name: "Prince Floor Acid (Heavy-Duty Stain Remover)",
       category: "Tile & Sanitary Care",
-      image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
-      tagline: "Heavy Tile Stain & Scale Deposit Dissolver",
-      description: "Formulated for tough cleaning challenges, our floor acid rapidly dissolves stubborn yellow water marks, hard water lime scale, rust stains, and post-construction cement residue from ceramic tiles and sanitary porcelain.",
+      image: "/assets/images/product_floor_acid.jpg",
+      isBottle: true,
+      tagline: "Heavy Tile Stain & Mineral Deposit Dissolver — 1 Litre",
+      description: "Formulated for tough cleaning challenges, our high-strength floor acid rapidly dissolves stubborn yellow water marks, hard water lime scale, rust stains, and post-construction cement residue from ceramic tiles and sanitary porcelain.",
       usages: ["Bathroom Floor & Wall Tiles", "Sanitary Utensils & Urinals", "Post-Construction Cleanup Sites"],
       packaging: "500ml Heavy Duty Bottle | 1 Litre Container | 5 Litre Drum"
     },
     {
       id: "dish-wash",
-      name: "Dish Wash / Dishwashing Liquid",
+      name: "Vin Drop Dishwash Liquid Lemon",
       category: "Kitchen Hygiene",
-      image: "https://images.unsplash.com/photo-1585842378054-ee2e52f94ba2?auto=format&fit=crop&w=800&q=80",
-      tagline: "Power Lemon Grease-Cutting Liquid",
-      description: "Conquers stubborn oil, ghee, burnt grease, and food odor on all cooking utensils. Formulated with high-foaming surfactants that rinse off completely without leaving white chalky film or irritating hands.",
+      image: "/assets/images/product_dishwash_lemon.jpg",
+      isBottle: false,
+      tagline: "Power Lemon Grease-Cutting Formula — 225ml",
+      description: "Conquers stubborn oil, ghee, burnt grease, and food odor on all cooking utensils. Formulated with natural lemon power and high-foaming surfactants that rinse off completely without leaving white chalky film or irritating hands.",
       usages: ["Stainless Steel Cookware", "Glassware & Fine Crockery", "Non-Stick Frying Pans", "Restaurant Kitchen Equipment"],
-      packaging: "250ml Squeeze Bottle | 500ml Bottle | 1 Litre Refill | 5 Litre Can"
+      packaging: "225ml Dispenser Bottle | 500ml Bottle | 1 Litre Refill | 5 Litre Can"
     }
   ];
 
   return (
     <div>
       <SEOHead 
-        title="White Phenyl, Black Phenyl, Floor Cleaner & Dish Wash Manufacturer" 
-        description="Prince Industries manufactures high-grade White Phenyl, Black Phenyl, Floor Cleaner, Floor Acid, and Dish Wash Liquid in Aska, Ganjam, Odisha."
+        title="White Phenyl, Black Phenyl, Toilet Cleaner & Dish Wash Manufacturer" 
+        description="Prince Industries manufactures high-grade White Phenyl, Black Phenyl, Toilet Cleaner, Floor Acid, and Dish Wash Liquid in Derabish, Kendrapara, Odisha."
       />
 
       {/* Hero */}
@@ -84,13 +100,13 @@ export default function CleaningProductsPage({ onOpenQuoteModal }) {
               marginBottom: '1rem'
             }}>
               <Sparkles size={14} />
-              SURFACE & DISINFECTANT CLEANING RANGE
+              AUTHENTIC MANUFACTURED CLEANING RANGE
             </span>
             <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: '3rem', fontWeight: 800, lineHeight: 1.15, marginBottom: '1rem' }}>
               Powerful Cleaning for Everyday Spaces
             </h1>
             <p style={{ fontSize: '1.15rem', color: '#94A3B8', lineHeight: 1.7 }}>
-              Engineered for residential, commercial, and institutional sanitation needs. High-concentration white/black phenyls, glossy floor cleaners, stain acids, and grease-cutting dish liquids.
+              Directly manufactured at our plant in Derabish, Kendrapara, Odisha. High-emulsion white phenyls, Kobra black phenyl, thick-gel toilet cleaners, stain-dissolving acids, and Vin Drop lemon dishwash.
             </p>
           </div>
         </div>
@@ -157,15 +173,25 @@ export default function CleaningProductsPage({ onOpenQuoteModal }) {
 
                   <div style={{ order: idx % 2 === 1 ? 1 : 2 }}>
                     <div style={{
-                      borderRadius: 'var(--radius-md)',
+                      borderRadius: 'var(--radius-lg)',
                       overflow: 'hidden',
                       boxShadow: 'var(--shadow-lg)',
-                      border: '1px solid var(--border-light)'
+                      border: '1px solid var(--border-light)',
+                      backgroundColor: p.isBottle ? '#FFFFFF' : '#0F172A',
+                      height: '380px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      padding: p.isBottle ? '1.25rem' : '0'
                     }}>
                       <img 
                         src={p.image} 
                         alt={p.name}
-                        style={{ width: '100%', height: '360px', objectFit: 'cover' }}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          objectFit: p.isBottle ? 'contain' : 'cover'
+                        }}
                       />
                     </div>
                   </div>

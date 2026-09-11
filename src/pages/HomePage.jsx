@@ -19,7 +19,7 @@ export default function HomePage({ onOpenQuoteModal }) {
     { title: "Bulk Order Support", desc: "Custom packaging options in 5L canisters to 200L drums tailored for commercial buyers.", icon: Send },
     { title: "Competitive Pricing", desc: "Transparent, cost-effective pricing models offering exceptional value without compromising purity.", icon: Sparkles },
     { title: "Consistent Supply", desc: "Dependable dispatch routines ensuring your retail shelves or business facility never runs out of stock.", icon: CheckCircle2 },
-    { title: "Customer-Focused Service", desc: "Dedicated support team in Aska, Ganjam to assist with order customizations and logistics.", icon: HeartHandshake }
+    { title: "Customer-Focused Service", desc: "Dedicated support team in Derabish, Kendrapara to assist with order customizations and logistics.", icon: HeartHandshake }
   ];
 
   const handwashVariants = [
@@ -43,7 +43,7 @@ export default function HomePage({ onOpenQuoteModal }) {
     <div>
       <SEOHead 
         title="Trusted Cleaning & Hygiene Products Manufacturer" 
-        description="Prince Industries manufactures & supplies handwash, detergent powder, liquid detergent, white & black phenyl, floor cleaners, dish wash in Aska, Ganjam, Odisha."
+        description="Prince Industries manufactures & supplies handwash, detergent powder, liquid detergent, white & black phenyl, floor cleaners, dish wash in Derabish, Kendrapara, Odisha."
       />
 
       {/* 1. Hero Slideshow */}
@@ -65,7 +65,7 @@ export default function HomePage({ onOpenQuoteModal }) {
                 Quality Cleaning Products Built for Everyday Hygiene
               </h2>
               <p className="section-subtitle" style={{ marginBottom: '1.25rem' }}>
-                Prince Industries is a premier, trusted manufacturer, wholesaler, and retailer of cleaning and hygiene products situated in <strong>Aska, Ganjam, Odisha</strong>. We specialize in producing an extensive lineup of hygiene essentials tailored to meet the demanding requirements of households, retail networks, commercial enterprises, and institutions.
+                Prince Industries is a premier, trusted manufacturer, wholesaler, and retailer of cleaning and hygiene products situated in <strong>Derabish, Kendrapara, Odisha</strong>. We specialize in producing an extensive lineup of hygiene essentials tailored to meet the demanding requirements of households, retail networks, commercial enterprises, and institutions.
               </p>
               <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: '2rem' }}>
                 From moisturizing liquid handwashes enriched with delightful natural fragrances to active stain-busting detergent powders, high-emulsion pine white phenyls, heavy-duty black phenyls, sparkling floor cleaners, and grease-cutting dish wash liquids — every product is formulated with precision and commitment to purity.
@@ -82,7 +82,7 @@ export default function HomePage({ onOpenQuoteModal }) {
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', fontWeight: 700, color: 'var(--text-primary)' }}>
                   <CheckCircle2 size={18} style={{ color: 'var(--accent-green)' }} />
-                  <span>Serving Aska, Ganjam & Odisha</span>
+                  <span>Serving Derabish, Kendrapara & Odisha</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', fontWeight: 700, color: 'var(--text-primary)' }}>
                   <CheckCircle2 size={18} style={{ color: 'var(--accent-green)' }} />
@@ -111,7 +111,7 @@ export default function HomePage({ onOpenQuoteModal }) {
               }}>
                 <img 
                   src="/assets/images/hero_handwash_lineup_1788951637808.jpg" 
-                  alt="Prince Industries Cleaning Products Manufacturing in Aska Odisha"
+                  alt="Prince Industries Cleaning Products Manufacturing in Derabish, Kendrapara Odisha"
                   className="responsive-feature-img"
                 />
               </div>
@@ -133,7 +133,7 @@ export default function HomePage({ onOpenQuoteModal }) {
                 </div>
                 <div>
                   <div style={{ fontSize: '1rem', fontWeight: 800, color: 'var(--text-primary)' }}>100% Quality Assurance</div>
-                  <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>Aska, Ganjam, Odisha Manufacturing</div>
+                  <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>Derabish, Kendrapara, Odisha Manufacturing</div>
                 </div>
               </div>
             </div>
@@ -387,7 +387,7 @@ export default function HomePage({ onOpenQuoteModal }) {
                 Quality Controlled Chemical & Liquid Manufacturing Facility
               </h2>
               <p style={{ color: '#94A3B8', fontSize: '1.05rem', lineHeight: 1.7, marginBottom: '2rem' }}>
-                Located in Aska, Ganjam, Odisha, our manufacturing infrastructure employs precision liquid homogenization, chemical testing, and automated filling lines to maintain high purity and batch consistency.
+                Located in Derabish, Kendrapara, Odisha, our manufacturing infrastructure employs precision liquid homogenization, chemical testing, and automated filling lines to maintain high purity and batch consistency.
               </p>
 
               <div className="btn-group-responsive">

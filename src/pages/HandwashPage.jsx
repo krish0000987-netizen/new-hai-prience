@@ -61,7 +61,7 @@ export default function HandwashPage({ onOpenQuoteModal }) {
     <div>
       <SEOHead 
         title="Liquid Handwash Range - Aloe Vera, Strawberry, Rose, Lime, Fresh" 
-        description="Explore Prince Industries handwash range manufactured in Aska, Odisha. Available in Aloe Vera, Strawberry, Rose, Lime, and Fresh variants."
+        description="Explore Prince Industries handwash range manufactured in Derabish, Kendrapara, Odisha. Available in Aloe Vera, Strawberry, Rose, Lime, and Fresh variants."
       />
 
       {/* Hero */}

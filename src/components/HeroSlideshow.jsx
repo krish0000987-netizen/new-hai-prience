@@ -8,7 +8,9 @@ export default function HeroSlideshow({ onOpenQuoteModal }) {
 
   const slides = [
     {
-      image: "/assets/images/hero_slide_1.jpg",
+      image: "/assets/images/product_handwash_range.jpg",
+      bgSize: 'cover',
+      bgPos: 'center center',
       tag: "TRUSTED MANUFACTURER IN ODISHA",
       headline: "Powerful Cleaning. Everyday Freshness.",
       subheading: "Quality cleaning and hygiene products manufactured for homes, businesses, and institutions across Odisha.",
@@ -18,7 +20,9 @@ export default function HeroSlideshow({ onOpenQuoteModal }) {
       ctaSecondaryAction: true
     },
     {
-      image: "/assets/images/hero_slide_2.jpg",
+      image: "/assets/images/brand_banner_white_phenyl.jpg",
+      bgSize: 'cover',
+      bgPos: 'center center',
       tag: "COMPLETE CLEANING RANGE",
       headline: "Reliable Cleaning Products for Every Need",
       subheading: "High-grade detergent powder, liquid detergent, white & black phenyl, and floor cleaners.",
@@ -28,34 +32,40 @@ export default function HeroSlideshow({ onOpenQuoteModal }) {
       ctaSecondaryLink: "/wholesale"
     },
     {
-      image: "/assets/images/hero_slide_3.jpg",
-      tag: "HYGIENE & HAND CARE",
-      headline: "Freshness You Can Trust",
-      subheading: "Premium handwash range available in Aloe Vera, Strawberry, Rose, Lime, and Fresh variants.",
-      ctaPrimaryText: "Explore Handwash Range",
-      ctaPrimaryLink: "/handwash",
-      ctaSecondaryText: "Enquire Handwash Supply",
+      image: "/assets/images/product_black_phenyl_kobra.jpg",
+      bgSize: 'cover',
+      bgPos: 'center top',
+      tag: "POWERFUL DISINFECTION",
+      headline: "Prince Kobra Phenyl — Maximum Protection",
+      subheading: "Kills germs, removes stains, pleasant fragrance & long-lasting freshness for floors, bathrooms & more.",
+      ctaPrimaryText: "Explore Cleaning Products",
+      ctaPrimaryLink: "/cleaning-products",
+      ctaSecondaryText: "Enquire Bulk Supply",
       ctaSecondaryAction: true
     },
     {
-      image: "/assets/images/hero_slide_4.jpg",
+      image: "/assets/images/product_herbal_soap_neem_box.jpg",
+      bgSize: 'cover',
+      bgPos: 'center center',
+      tag: "NATURAL HERBAL PERSONAL CARE",
+      headline: "Royal Neem Herbal Soap — Refresh & Purify",
+      subheading: "100% Natural • Traditional Ayurvedic Formula • Dermatologically Tested — manufactured by Prince Industries.",
+      ctaPrimaryText: "View All Products",
+      ctaPrimaryLink: "/products",
+      ctaSecondaryText: "Enquire Herbal Soap Supply",
+      ctaSecondaryAction: true
+    },
+    {
+      image: "/assets/images/hero_manufacturing_plant_1788951656578.jpg",
+      bgSize: 'cover',
+      bgPos: 'center center',
       tag: "MANUFACTURING EXCELLENCE",
       headline: "Manufactured with Care. Supplied with Confidence.",
-      subheading: "State-of-the-art liquid formulation and automated bottling facility in Aska, Ganjam, Odisha.",
+      subheading: "State-of-the-art liquid formulation and automated bottling facility in Derabish, Kendrapara, Odisha.",
       ctaPrimaryText: "About Prince Industries",
       ctaPrimaryLink: "/about",
       ctaSecondaryText: "Our Production Process",
       ctaSecondaryLink: "/manufacturing"
-    },
-    {
-      image: "/assets/images/hero_cleaning_suite_1788951618765.jpg",
-      tag: "B2B & INSTITUTIONAL SUPPLY",
-      headline: "From Retail Shelves to Bulk Supply",
-      subheading: "Direct factory pricing for retailers, distributors, hotels, schools, and commercial buyers.",
-      ctaPrimaryText: "Contact Us",
-      ctaPrimaryLink: "/gallery-contact",
-      ctaSecondaryText: "Request B2B Pricing",
-      ctaSecondaryAction: true
     }
   ];
 
@@ -127,8 +137,8 @@ export default function HeroSlideshow({ onOpenQuoteModal }) {
                 position: 'absolute',
                 inset: 0,
                 backgroundImage: `url(${slide.image})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center center',
+                backgroundSize: slide.bgSize || 'cover',
+                backgroundPosition: slide.bgPos || 'center center',
                 transform: isActive ? 'scale(1.05)' : 'scale(1.0)',
                 transition: 'transform 4.5s ease-out'
               }}

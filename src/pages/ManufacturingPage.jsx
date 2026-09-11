@@ -17,8 +17,8 @@ export default function ManufacturingPage({ onOpenQuoteModal }) {
   return (
     <div>
       <SEOHead 
-        title="Manufacturing Quality & Facility - Aska, Odisha" 
-        description="Learn about Prince Industries modern manufacturing facility in Aska, Ganjam, Odisha. Raw materials, liquid processing, quality control, packaging, warehouse dispatch."
+        title="Manufacturing Quality & Facility - Derabish, Kendrapara, Odisha" 
+        description="Learn about Prince Industries modern manufacturing facility in Derabish, Kendrapara, Odisha. Raw materials, liquid processing, quality control, packaging, warehouse dispatch."
       />
 
       {/* Hero */}
@@ -48,7 +48,7 @@ export default function ManufacturingPage({ onOpenQuoteModal }) {
               Manufacturing Quality You Can Rely On
             </h1>
             <p style={{ fontSize: '1.15rem', color: '#94A3B8', lineHeight: 1.7 }}>
-              Precision chemical liquid formulation, automated powder blending, strict quality assurance, and organized warehousing based in Aska, Ganjam, Odisha.
+              Precision chemical liquid formulation, automated powder blending, strict quality assurance, and organized warehousing based in Derabish, Kendrapara, Odisha.
             </p>
           </div>
         </div>

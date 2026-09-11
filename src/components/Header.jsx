@@ -64,7 +64,7 @@ export default function Header({ onOpenQuoteModal }) {
           <div className="top-bar-info">
             <div className="top-bar-item">
               <MapPin size={14} style={{ color: '#34D399' }} />
-              <span>Aska, Ganjam, Odisha, India</span>
+              <span>Derabish, Kendrapara, Odisha, India</span>
             </div>
             <div className="top-bar-item top-bar-tagline">
               <Sparkles size={14} style={{ color: '#34D399' }} />

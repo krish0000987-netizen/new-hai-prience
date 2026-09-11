@@ -31,8 +31,8 @@ export default function GalleryContactPage({ onOpenQuoteModal }) {
   return (
     <div>
       <SEOHead 
-        title="Product Gallery & Contact Us - Prince Industries Aska" 
-        description="View photo gallery of Prince Industries cleaning products, manufacturing facility, warehouse & contact our sales desk in Aska, Ganjam, Odisha."
+        title="Product Gallery & Contact Us - Prince Industries Derabish, Kendrapara" 
+        description="View photo gallery of Prince Industries cleaning products, manufacturing facility, warehouse & contact our sales desk in Derabish, Kendrapara, Odisha."
       />
 
       {/* Hero */}
@@ -62,7 +62,7 @@ export default function GalleryContactPage({ onOpenQuoteModal }) {
               Product Gallery & Contact Prince Industries
             </h1>
             <p style={{ fontSize: '1.15rem', color: '#94A3B8', lineHeight: 1.7 }}>
-              Browse our product photography, manufacturing infrastructure, and connect directly with our team in Aska, Ganjam, Odisha.
+              Browse our product photography, manufacturing infrastructure, and connect directly with our team in Derabish, Kendrapara, Odisha.
             </p>
           </div>
         </div>
@@ -109,7 +109,10 @@ export default function GalleryContactPage({ onOpenQuoteModal }) {
 
           {/* Masonry / Grid Gallery */}
           <div className="grid-3">
-            {filteredGallery.map((item) => (
+            {filteredGallery.map((item) => {
+              // Product bottle/box shots need contain, ad/brand/facility need cover
+              const isProductShot = item.category === 'Products';
+              return (
               <div 
                 key={item.id} 
                 className="card"
@@ -122,12 +125,20 @@ export default function GalleryContactPage({ onOpenQuoteModal }) {
                   height: '240px',
                   borderRadius: '10px',
                   overflow: 'hidden',
-                  marginBottom: '0.75rem'
+                  marginBottom: '0.75rem',
+                  backgroundColor: isProductShot ? '#FFFFFF' : '#F1F5F9'
                 }}>
                   <img 
                     src={item.image} 
                     alt={item.title}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }}
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: isProductShot ? 'contain' : 'cover',
+                      objectPosition: 'center',
+                      padding: isProductShot ? '0.5rem' : '0',
+                      transition: 'transform 0.5s ease'
+                    }}
                     className="product-card-img"
                   />
                   <div style={{
@@ -158,8 +169,10 @@ export default function GalleryContactPage({ onOpenQuoteModal }) {
                   </p>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
+
         </div>
       </section>
 
@@ -243,7 +256,8 @@ export default function GalleryContactPage({ onOpenQuoteModal }) {
                       <strong style={{ display: 'block', fontSize: '0.95rem', color: 'var(--text-primary)' }}>Manufacturing Address:</strong>
                       <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
                         Prince Industries<br />
-                        Aska, Ganjam District, Odisha, India - 761111
+                        At. Chasakhanda Post, Derabish,<br />
+                        Dist. Kendrapara, Odisha - 754289
                       </span>
                     </div>
                   </div>
@@ -264,7 +278,8 @@ export default function GalleryContactPage({ onOpenQuoteModal }) {
                     </div>
                     <div>
                       <strong style={{ display: 'block', fontSize: '0.95rem', color: 'var(--text-primary)' }}>Sales & Wholesale Hotline:</strong>
-                      <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Available for Direct Telephone Inquiries</span>
+                      <a href="tel:+919178052340" style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', display: 'block', textDecoration: 'none' }}>+91 91780 52340</a>
+                      <a href="tel:+918580620653" style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', display: 'block', textDecoration: 'none', marginTop: '0.2rem' }}>+91 85806 20653</a>
                     </div>
                   </div>
                 </div>
@@ -281,11 +296,11 @@ export default function GalleryContactPage({ onOpenQuoteModal }) {
                   gap: '0.5rem'
                 }}>
                   <MapPin size={18} style={{ color: '#34D399' }} />
-                  <span style={{ fontWeight: 700, fontSize: '0.95rem' }}>Aska, Ganjam, Odisha Location</span>
+                  <span style={{ fontWeight: 700, fontSize: '0.95rem' }}>Derabish, Kendrapara, Odisha Location</span>
                 </div>
                 <div style={{ padding: '1.75rem', backgroundColor: '#FFFFFF', textAlign: 'center' }}>
                   <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: 1.6, marginBottom: '1.25rem' }}>
-                    Situated in Aska, Ganjam, Odisha, our plant serves regional supply hubs in Berhampur, Bhanjanagar, Phulbani, Bhubaneswar, and surrounding commercial corridors.
+                    Situated in Derabish, Kendrapara, Odisha, our plant serves regional supply hubs in Cuttack, Bhubaneswar, Kendrapara town, Jagatsinghpur, Paradip, and surrounding commercial corridors.
                   </p>
                   <button onClick={() => onOpenQuoteModal()} className="btn btn-primary btn-md" style={{ width: '100%', justifyContent: 'center' }}>
                     <Send size={16} />
@@ -323,7 +338,7 @@ export default function GalleryContactPage({ onOpenQuoteModal }) {
                     Message Sent Successfully!
                   </h4>
                   <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                    Thank you, <strong>{formData.fullName}</strong>. Our team in Aska will respond to your query regarding <strong>{formData.product}</strong> promptly.
+                    Thank you, <strong>{formData.fullName}</strong>. Our team in Derabish, Kendrapara will respond to your query regarding <strong>{formData.product}</strong> promptly.
                   </p>
                 </div>
               ) : (

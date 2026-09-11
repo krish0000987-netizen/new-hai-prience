@@ -19,8 +19,8 @@ export default function AboutPage({ onOpenQuoteModal }) {
   return (
     <div>
       <SEOHead 
-        title="About Prince Industries - Aska, Odisha" 
-        description="Learn about Prince Industries, a trusted manufacturer, wholesaler, and retailer of cleaning & hygiene products based in Aska, Ganjam, Odisha."
+        title="About Prince Industries - Derabish, Kendrapara, Odisha" 
+        description="Learn about Prince Industries, a trusted manufacturer, wholesaler, and retailer of cleaning & hygiene products based in Derabish, Kendrapara, Odisha."
       />
 
       {/* Page Hero */}
@@ -51,7 +51,7 @@ export default function AboutPage({ onOpenQuoteModal }) {
               About Prince Industries
             </h1>
             <p style={{ fontSize: '1.15rem', color: '#94A3B8', lineHeight: 1.7 }}>
-              Prince Industries is a premier cleaning and hygiene products manufacturer, wholesaler, and retailer based in Aska, Ganjam, Odisha, dedicated to delivering superior sanitation and freshness for homes, businesses, and institutions.
+              Prince Industries is a premier cleaning and hygiene products manufacturer, wholesaler, and retailer based in Derabish, Kendrapara, Odisha, dedicated to delivering superior sanitation and freshness for homes, businesses, and institutions.
             </p>
           </div>
         </div>
@@ -70,10 +70,10 @@ export default function AboutPage({ onOpenQuoteModal }) {
                 Dedicated to Pure Cleanliness & Everyday Hygiene
               </h2>
               <p className="section-subtitle" style={{ marginBottom: '1.25rem' }}>
-                Established as a trusted local cleaning-product manufacturer in Aska, Ganjam, Odisha, Prince Industries was founded with a singular commitment: producing highly effective, dependable, and affordable cleaning and hygiene solutions.
+                Established as a trusted local cleaning-product manufacturer in Derabish, Kendrapara, Odisha, Prince Industries was founded with a singular commitment: producing highly effective, dependable, and affordable cleaning and hygiene solutions.
               </p>
               <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: '1.5rem' }}>
-                We understand that clean environments foster healthy living and productive workplaces. That is why our manufacturing facility in Aska utilizes quality raw materials, balanced chemical formulations, and stringent quality control protocols across our entire product line.
+                We understand that clean environments foster healthy living and productive workplaces. That is why our manufacturing facility in Derabish, Kendrapara utilizes quality raw materials, balanced chemical formulations, and stringent quality control protocols across our entire product line.
               </p>
               <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: '2rem' }}>
                 Whether supplying individual households with skin-soothing scented handwashes, empowering local retailers with high-demand detergent stock, or fulfilling bulk disinfectant phenyl orders for institutions, Prince Industries stands for consistency, trust, and uncompromised quality.
@@ -99,7 +99,7 @@ export default function AboutPage({ onOpenQuoteModal }) {
               }}>
                 <img 
                   src="/assets/images/hero_manufacturing_plant_1788951656578.jpg" 
-                  alt="Prince Industries Story in Aska Odisha"
+                  alt="Prince Industries Story in Derabish, Kendrapara Odisha"
                   style={{ width: '100%', height: '440px', objectFit: 'cover' }}
                 />
               </div>
@@ -228,10 +228,10 @@ export default function AboutPage({ onOpenQuoteModal }) {
             OUR LOCATION
           </span>
           <h2 className="section-title">
-            Proudly Located in Aska, Ganjam, Odisha
+            Proudly Located in Derabish, Kendrapara, Odisha
           </h2>
           <p className="section-subtitle" style={{ margin: '0 auto 2rem auto' }}>
-            Operating from Aska in Ganjam district, we are strategically positioned to supply high-quality cleaning products across Southern Odisha and nationwide commercial logistics routes.
+            Operating from Derabish in Kendrapara district, we are strategically positioned to supply high-quality cleaning products across Southern Odisha and nationwide commercial logistics routes.
           </p>
 
           <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
